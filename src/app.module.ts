@@ -21,7 +21,7 @@ import { EventsModule } from './events/events.module';
       database: process.env.DB_NAME,
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: true,
-      // ssl: { rejectUnauthorized: false },
+      ssl: true,
     }),
     AuthModule,
     UsersModule,
